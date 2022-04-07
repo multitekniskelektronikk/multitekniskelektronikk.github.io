@@ -1,0 +1,145 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+    min-height: 100vh;
+}
+
+.front {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4546-1024x618.jpeg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.buttons {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttons a {
+    color: white;
+    background: #428bca;
+    text-decoration: none;
+    border: 1px solid #2d6ca2;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 130px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.logo {
+    width: 80%;
+    max-width: 500px;
+    display: block
+}
+
+.map {
+    height: 600px;
+    min-height: 600px;
+}
+
+.about {
+    min-height: 50vh;
+
+}
+
+.about h2,
+.kontakt h2 {
+    font-size: 47px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+p {
+
+    font-size: 20px;
+
+    text-align: center;
+
+    line-height: 1.45;
+    font-weight: 400;
+}
+
+.tjenester {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.tjenester i{
+    font-size: 100px;
+}
+
+.tjeneste {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tjeneste p {
+
+    font-size: 14px;
+}
+
+.tjeneste h3 {
+
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    font-weight: 400;
+    
+}
+
+@media (min-width:730px) {
+    .tjenester {
+        flex-direction: row;
+
+    }
+}
+
+.kontakt {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("./assets/IMG_4675-1-1024x683.jpeg");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.kontakt div {
+    text-align: center;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.kontakt a {
+    color: #428bca;
+    font-weight: 600;
+}
+
+.kontakt img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 100%;
+}
