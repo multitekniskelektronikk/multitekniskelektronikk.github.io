@@ -48,7 +48,7 @@
 }
 
 .about {
-    min-height: 50vh;
+    min-height: 70vh;
 
 }
 
@@ -96,7 +96,7 @@ p {
 
 .tjeneste p {
 
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tjeneste h3 {
@@ -108,12 +108,7 @@ p {
     
 }
 
-@media (min-width:730px) {
-    .tjenester {
-        flex-direction: row;
 
-    }
-}
 
 .kontakt {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("./assets/IMG_4675-1-1024x683.jpeg");
@@ -127,10 +122,12 @@ p {
     align-items: center;
 }
 
-.kontakt div {
+.kontakt .person {
     text-align: center;
     line-height: 2;
     font-weight: 600;
+    margin-bottom: 80px;
+
 }
 
 .kontakt a {
@@ -142,4 +139,22 @@ p {
     width: 80%;
     max-width: 400px;
     border-radius: 100%;
+}
+
+.personer{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+@media (min-width:730px) {
+    .tjenester {
+        flex-direction: row;
+
+    }
+
+    .personer{
+        flex-direction: row;
+    }
 }
