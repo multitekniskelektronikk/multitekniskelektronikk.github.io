@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nn-NO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D-utskriftsfiler | Solberg Multi-teknisk elektronikk</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      body {
+        background: #f7f7fa;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      .block {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        margin: 32px auto;
+        max-width: 800px;
+        padding: 32px;
+      }
+      h1,
+      h2 {
+        color: #1a2a3a;
+      }
+      .shop-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: flex-start;
+      }
+      .shop-item {
+        background: #f0f4fa;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        padding: 24px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .shop-preview {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        background: #eaeaea;
+      }
+      .download-btn {
+        background: #1a2a3a;
+        color: #fff;
+        padding: 8px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 12px;
+        transition: background 0.2s;
+      }
+      .download-btn:hover {
+        background: #2e4a6a;
+      }
+      .license {
+        font-size: 0.95em;
+        color: #444;
+        background: #f8f8ff;
+      }
+      a {
+        color: #1a2a3a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <a href="./index.html">&larr; Tilbake til forsiden</a>
+      <h1>Utskriftsfiler</h1>
+      <p>
+        Her finner du 3D-printbare verktøy og reservedeler for
+        rørinspeksjonskamera. Filene er gratis for personlig bruk. Ønsker du å
+        bestille ferdig printede deler,
+        <a href="mailto:post@multi-teknisk.no">kontakt oss</a>!
+      </p>
+    </div>
+    <div class="block">
+      <h2>Tilgjengelige 3D-filer</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <img
+            src="./assets/stls/hub-lock/hub-lock.png"
+            alt="Hub Lock"
+            class="shop-preview"
+          />
+          <h3>Hub Lock</h3>
+          <p>Kort beskrivelse: Låser huben på rørinspeksjonskamera.</p>
+          <p>Vekt: ca 25g</p>
+          <a
+            href="./assets/stls/hub-lock/hub-lock.stl"
+            download
+            class="download-btn"
+            >Last ned STL</a
+          >
+        </div>
+        <!-- Flere elementer kan legges til her -->
+      </div>
+    </div>
+    <div class="block license">
+      <h2>Lisens</h2>
+      <p>
+        Filene er gratis for personlig bruk. Kommersiell bruk, videresalg eller
+        modifikasjon for salg er ikke tillatt med mindre filene er vesentlig
+        transformert. <br />
+        Forslag til lisens: Creative Commons
+        Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND).
+      </p>
+    </div>
+  </body>
+</html>

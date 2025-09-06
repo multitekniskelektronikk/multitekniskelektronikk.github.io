@@ -71,8 +71,8 @@ h2 {
   clear: both;
 }
 .shop-items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
   justify-content: center;
   margin-bottom: 32px;
@@ -85,8 +85,7 @@ h2 {
   background: #2c3440;
   border-radius: 8px;
   box-shadow: 0 1px 8px rgba(66, 139, 202, 0.15);
-  padding: 24px;
-  width: 240px;
+  padding: 32px 24px;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -141,7 +140,7 @@ a:hover {
     padding: 0 4px;
   }
   .shop-items {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 16px;
     max-width: 100%;
     margin-left: 0;
@@ -152,6 +151,7 @@ a:hover {
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    padding: 16px 8px;
   }
   .block {
     padding: 16px 8px;
